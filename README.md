@@ -1,13 +1,15 @@
-Suzuduino UNOは、Arduino UNO形状の基板のプロトタイピング向けマイコンボードです。
+Suzuduino UNOシリーズは、Arduino UNO形状の基板のプロトタイピング向けマイコンボードです。
+
 Suzuduino UNO series is a prototyping board in Arduino UNO shape.
 
 
 ## Suzuduino UNO V1a
 
 **Suzuduino UNO V1a**は、**WCH CH32V203K8T6**を採用したマイコンボードです。RISC-V MCUのプロトタイピングにご利用ください。
+
 Suzuduino UNO V1a is a prototyping board with WCH CH32V203K8T6 (RISC-V 32bit RV32IMAC).
 
-**プリント基板が買えます → [スズの宝箱](https://suzu3tsu.booth.pm/) !**
+**プリント基板が買えます！ / Buy the PCB at → [ショップ「スズの宝箱」](https://suzu3tsu.booth.pm/)**
 
 ![photo of Suzuduino UNO V1a](images/suzuduino-uno-v1a-pcb3.jpg)
 
