@@ -4,7 +4,7 @@ Suzuduino UNO V1a is a prototyping board with WCH CH32V203K8T6 (RISC-V 32bit RV3
 
 **プリント基板が買えます！ / Buy the PCB at → [ショップ「スズの宝箱」](https://suzu3tsu.booth.pm/)**
 
- - [販売品に添付のドキュメント (PDF)](../docs/suzuduino-uno-v1a_ShortGuide.pdf) 
+ - [販売品に添付のドキュメント (PDF)](../docs/suzuduino-uno-v1a_ShortGuide_02.pdf) 
  - [プログラム例](../examples/README.md)
  - [回路図 (PDF)](../drawings/suzuduino-uno-v1a_schematic.pdf)
 
@@ -42,25 +42,25 @@ LEDは、四角いランドの側がカソード（GND側）です。
 
 ## 部品表 / Required components
 
-| 種類 | 商品名・スペック | 数量 | 参考URL |
-|---|---|--- |---|
-| マイコン | WCH CH32V203K8T6 | 1 |  https://akizukidenshi.com/catalog/g/gI-18063/ |
-| 抵抗 | 10K | 2 | https://akizukidenshi.com/catalog/g/gR-25103/ |
-| 抵抗 | 1K | 2 | https://akizukidenshi.com/catalog/g/gR-25102/ |
-| 抵抗 | 5.1K | 2 | https://akizukidenshi.com/catalog/g/gR-07832/|
-| コンデンサ | 10u | 2 | https://akizukidenshi.com/catalog/g/gP-10590/ |
-| コンデンサ | 0.1u | 3 | https://akizukidenshi.com/catalog/g/gP-00090/ |
-| LED | 3mm | 2 | https://akizukidenshi.com/catalog/g/gI-11577/ |
-| ポリスイッチ | 0.9A/1.8A | 1 | https://akizukidenshi.com/catalog/g/gP-13593/ |
-| ダイオード | ショットキーバリアダイオード | 1 | https://akizukidenshi.com/catalog/g/gI-07788/ |
-| 三端子レギュレータ | TO-220 3.3V出力 | 1 | https://akizukidenshi.com/catalog/g/gI-13675/ |
-| スイッチ | タクトスイッチ 6mm | 2 | https://akizukidenshi.com/catalog/g/gP-03647/ |
-| ピンヘッダ | 2.54mm 6コマ、3コマ | — | https://akizukidenshi.com/catalog/g/gC-00167/ |
-| ピンソケット | 2.54mm 8コマ、10コマ、6コマ、8コマ | — | https://akizukidenshi.com/catalog/g/gC-17504/ https://akizukidenshi.com/catalog/g/gC-17503/ |
-| ジャンパーピン | 2.54mm 2コマ | 1 | https://akizukidenshi.com/catalog/g/gP-03691/ |
-| DCジャック | 5.5mm/2.1mm | 1 | https://akizukidenshi.com/catalog/g/gC-06568/ |
-| Type-Cコネクタ変換基板 | 2.54mmピッチ変換基板 | 1 | https://akizukidenshi.com/catalog/g/gK-15426/ |
-| 表面実装Type-Cコネクタ | （※上記の変換基板の代わり） 5077CR-16-SMC2-BK-TR | 1 | https://akizukidenshi.com/catalog/g/gC-14356/ |
+| 種類 | ID |商品名・スペック | 数量 | 参考URL |
+|---|---|---|--- |---|
+| マイコン | U1 | WCH CH32V203K8T6 | 1 |  https://akizukidenshi.com/catalog/g/gI-18063/ |
+| 抵抗 | R1, R2 | 5.1K | 2 | https://akizukidenshi.com/catalog/g/gR-07832/|
+| 抵抗 | R3, R4 | 10K | 2 | https://akizukidenshi.com/catalog/g/gR-25103/ |
+| 抵抗 | R5, R6 | 1K | 2 | https://akizukidenshi.com/catalog/g/gR-25102/ |
+| コンデンサ | C1, C2 | 10u | 2 | https://akizukidenshi.com/catalog/g/gP-10590/ |
+| コンデンサ | C5, C6, C7 | 0.1u | 3 | https://akizukidenshi.com/catalog/g/gP-00090/ |
+| LED | D1, D2 | 3mm | 2 | https://akizukidenshi.com/catalog/g/gI-11577/ |
+| ポリスイッチ | F1 | 0.9A/1.8A | 1 | https://akizukidenshi.com/catalog/g/gP-13593/ |
+| ダイオード | D3 | ショットキーバリアダイオード | 1 | https://akizukidenshi.com/catalog/g/gI-07788/ |
+| 三端子レギュレータ | U2 | TO-220 3.3V出力 | 1 | https://akizukidenshi.com/catalog/g/gI-13675/ |
+| スイッチ | (RESET,BOOT0) | タクトスイッチ 6mm | 2 | https://akizukidenshi.com/catalog/g/gP-03647/ |
+| ピンヘッダ | | 2.54mm 6コマ、3コマ | — | https://akizukidenshi.com/catalog/g/gC-00167/ |
+| ピンソケット | | 2.54mm 8コマ、10コマ、6コマ、8コマ | — | https://akizukidenshi.com/catalog/g/gC-17504/ https://akizukidenshi.com/catalog/g/gC-17503/ |
+| ジャンパーピン | | 2.54mm 2コマ | 1 | https://akizukidenshi.com/catalog/g/gP-03691/ |
+| DCジャック | | 5.5mm/2.1mm | 1 | https://akizukidenshi.com/catalog/g/gC-06568/ |
+| Type-Cコネクタ変換基板 | | 2.54mmピッチ変換基板 | 1 | https://akizukidenshi.com/catalog/g/gK-15426/ |
+| 表面実装Type-Cコネクタ | | （※上記の変換基板の代わり） 5077CR-16-SMC2-BK-TR | 1 | https://akizukidenshi.com/catalog/g/gC-14356/ |
 
 
 ## スペック / Specs

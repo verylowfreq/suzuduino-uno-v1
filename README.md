@@ -13,7 +13,7 @@ Suzuduino UNO V1a is a prototyping board with WCH CH32V203K8T6 (RISC-V 32bit RV3
 
 ![photo of Suzuduino UNO V1a](images/suzuduino-uno-v1a-pcb3.jpg)
 
- - [Short guide (PDF)](docs/suzuduino-uno-v1a_ShortGuide.pdf)
+ - [Short guide (PDF)](docs/suzuduino-uno-v1a_ShortGuide_02.pdf)
  - [README](docs/suzuduino-uno-v1a_README.md)
  - [Examples](examples/README.md)
  - [Schematic (PDF)](drawings/suzuduino-uno-v1a_schematic.pdf)
