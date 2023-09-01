@@ -1,14 +1,19 @@
-**Suzuduino UNO V1a**は、**WCH CH32V203K8T6**を採用したマイコンボードです。RISC-V MCUのプロトタイピングにご利用ください。
+**Suzuduino UNO V1**は、**WCH CH32V203K8T6**を採用したマイコンボードです。RISC-V MCUのプロトタイピングにご利用ください。
 
 Suzuduino UNO V1a is a prototyping board with WCH CH32V203K8T6 (RISC-V 32bit RV32IMAC).
 
 **プリント基板が買えます！ / Buy the PCB at → [ショップ「スズの宝箱」](https://suzu3tsu.booth.pm/)**
 
- - [販売品に添付のドキュメント (PDF)](../docs/suzuduino-uno-v1a_ShortGuide_02.pdf) 
- - [プログラム例](../examples/README.md)
- - [回路図 (PDF)](../drawings/suzuduino-uno-v1a_schematic.pdf)
+ - [プログラム例/Examples](../examples/README.md)
+ - "V1b" [販売品に添付のドキュメント/Attached paper (PDF)](../docs/suzuduino-uno-v1a_ShortGuide_02.pdf) 
+ - "V1b" [回路図/Schematic (PDF)](../drawings/suzuduino-uno-v1a_schematic.pdf)
 
-![photo of Suzuduino UNO V1a](../images/suzuduino-uno-v1a-pcb3.jpg)
+(V1a)
+ - "V1a" [回路図/Schematic (PDF)](../drawings/suzuduino-uno-v1a_schematic.pdf)
+ - "V1a" [販売品に添付のドキュメント/Attached paper (PDF)](../docs/suzuduino-uno-v1a_ShortGuide_02.pdf) 
+
+Suzuduino UNO V1bの実装例。表面実装Type-Cコネクタを利用しています。 An assembled example of Suzuduino UNO V1b with SMD Type-C connector.
+![photo of Suzuduino UNO V1b](../images/suzuduino-uno-v1b-pcb1.jpg)
 
 CH32Vマイコンが日本でも容易に安価に入手可能になりました。しかしまだ情報や作例は多くありません。ぜひこの基板を使って、この楽しいチップを探求してみてください！
 
@@ -27,11 +32,25 @@ If you have any question, please post on GitHub Discussion.
 
 
 目次：
+ 1. 更新履歴 / PCB revisions
  1. 組み立て方 / Build instruciton
  1. 部品表 / Required components
  1. スペック / Specs
  1. 訂正箇所 / Errata
  1. 活用のヒント / Tips
+
+
+## 更新履歴
+
+#### V1b
+
+RESETとBOOT0ボタンを刻印どおりの配置に修正しました。表面実装Type-CコネクタのVBUSもポリスイッチで保護されています。
+
+
+#### V1a
+
+最初に販売したものです。RESETとBOOT0ボタンの刻印が誤っていて、ただしくは逆です。表面実装Type-CコネクタのVBUS配線がポリスイッチを経由していないので、Type-Cコネクタは変換基板の利用を推奨します。
+
 
 ## 組み立て方 / Build instruciton
 
@@ -78,13 +97,6 @@ LEDは、四角いランドの側がカソード（GND側）です。
 | Interface | USB, I2C, SPI, UART etc |
 
 
-## 訂正箇所 / Errata
-
- - 基板上の「BOOT0」と「RESET」の表記が逆になっています。
-    - 正しくは、基板の角にあるのが「BOOT0」、DCジャックの横にあるのが「RESET」です。
- - 表面実装Type-CのVBUSがポリヒューズで保護されていません。
-    - 変換基板の利用をお勧めします。
-
 
 ## 活用のヒント / Tips
 
@@ -94,7 +106,13 @@ LEDは、四角いランドの側がカソード（GND側）です。
 
 **USB経由でのソフトウェアの書き込み**
 
-WCH社が配布するWCHISPStudioを起動し、チップはCH32V203K8T6を選択します。本ボードのRESETボタンを押す（離さない）→BOOT0ボタンを押す（離さない）→2秒待機→RESETボタンを離す→BOOT0ボタンを離す、の手順で、マイコンがUSB書き込み待機モードで起動します。”Enable RRP”のチェックは外します。WCHISPStudioの”Download File”から書き込みたいhexファイルを選択し、”Download”ボタンをクリックします。
+WCH社が配布するWCHISPStudioを起動し、チップはCH32V203K8T6を選択します。
+
+本ボードのRESETボタンを押す（離さない）→BOOT0ボタンを押す（離さない）→2秒待機→RESETボタンを離す→BOOT0ボタンを離す、の手順で、マイコンがUSB書き込み待機モードで起動します。
+
+もしくは、BOOT0ボタンを押したまま、USBケーブルを差し込んでください。
+
+”Enable RRP”のチェックは外します。WCHISPStudioの”Download File”から書き込みたいhexファイルを選択し、”Download”ボタンをクリックします。
 
 **開発環境**
 
