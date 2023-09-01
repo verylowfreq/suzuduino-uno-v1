@@ -5,8 +5,8 @@ Suzuduino UNO V1a is a prototyping board with WCH CH32V203K8T6 (RISC-V 32bit RV3
 **プリント基板が買えます！ / Buy the PCB at → [ショップ「スズの宝箱」](https://suzu3tsu.booth.pm/)**
 
  - [プログラム例/Examples](../examples/README.md)
- - "V1b" [販売品に添付のドキュメント/Attached paper (PDF)](../docs/suzuduino-uno-v1a_ShortGuide_02.pdf) 
- - "V1b" [回路図/Schematic (PDF)](../drawings/suzuduino-uno-v1a_schematic.pdf)
+ - "V1b" [販売品に添付のドキュメント/Attached paper (PDF)](../docs/suzuduino-uno-v1b_ShortGuide_01.pdf) 
+ - "V1b" [回路図/Schematic (PDF)](../drawings/suzuduino-uno-v1b_schematic.pdf)
 
 (V1a)
  - "V1a" [回路図/Schematic (PDF)](../drawings/suzuduino-uno-v1a_schematic.pdf)
@@ -54,7 +54,7 @@ RESETとBOOT0ボタンを刻印どおりの配置に修正しました。表面�
 
 ## 組み立て方 / Build instruciton
 
-基板の表記と回路図を照らし合わせて組み立ててください。0.5mmピッチのICのはんだ付けは、方向に気をつけて、慎重に行ってください。USB Type-Cコネクタは変換基板の利用がおすすめです。代わりに表面実装Type-Cコネクタを使うこともできますが、訂正情報も参照してください。
+基板の表記と回路図を照らし合わせて組み立ててください。0.5mmピッチのICのはんだ付けは、方向に気をつけて、慎重に行ってください。
 
 LEDは、四角いランドの側がカソード（GND側）です。
 
