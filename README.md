@@ -11,11 +11,11 @@ Suzuduino UNO V1b is a prototyping board with WCH CH32V203K8T6 (RISC-V 32bit RV3
 
 V1b is a modified version of V1a, and same in functionally.
 
-**プリント基板が買えます！ / Buy the PCB at → [ショップ「スズの宝箱」](https://suzu3tsu.booth.pm/)**
+**販売中です！ / Buy at → [ショップ「スズの宝箱」/ Shop "Treasure box of Suzu"](https://suzu3tsu.booth.pm/)**
 
 ![photo of Suzuduino UNO V1b](images/suzuduino-uno-v1b-pcb1.jpg)
 
- - [Short guide (PDF)](docs/suzuduino-uno-v1b_ShortGuide_01.pdf)
+ - [Short guide (PDF)](docs/suzuduino-uno-v1b_ShortGuide_02.pdf)
  - [README](docs/suzuduino-uno-v1_README.md)
  - [Examples](examples/README.md)
  - [Schematic (PDF)](drawings/suzuduino-uno-v1b_schematic.pdf)
